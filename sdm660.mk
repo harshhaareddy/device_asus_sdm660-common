@@ -112,9 +112,14 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libtinyxml \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libstagefright_enc_common \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
