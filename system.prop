@@ -67,14 +67,19 @@ ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
-# Surfaceflinger
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.vsync_event_phase_offset_ns=2000000
-ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-ro.surface_flinger.set_display_power_timer_ms=10000
-ro.surface_flinger.set_touch_timer_ms=5000
-ro.surface_flinger.set_idle_timer_ms=9000
+# Tweak the memory management of the device, enable more background apps.. etc..
+ro.config.fha_enable=true  
+ro.sys.fw.bg_apps_limit=32  
+ro.config.dha_cached_max=16  
+ro.config.dha_empty_max=42  
+ro.config.dha_empty_init=32  
+ro.config.dha_lmk_scale=0.545  
+ro.config.dha_th_rate=2.3  
+ro.config.sdha_apps_bg_max=64  
+ro.config.sdha_apps_bg_min=8
+
+# Storage.xml moment
+persist.sys.binary_xml=false
 
 # Time
 persist.timed.enable=true
