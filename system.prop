@@ -35,6 +35,7 @@ persist.hwc.enable_vds=1
 sdm.debug.disable_skip_validate=1
 
 # Media
+debug.media.transcoding.codec_max_operating_rate=120
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vidc.enc.target_support_bframe=1
