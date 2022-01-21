@@ -82,8 +82,8 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+vendor/bin/hvdcp_opti|cfee9d4b5c2a842173aefe573344b2d3366f7d17
 
 # CNE
 system/etc/cne/Nexus/ATT/ATT_profiles.xml
@@ -323,13 +323,19 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 
-# Listen
-vendor/lib/libadpcmdec.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/libsmwrapper.so
+# Listen - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+vendor/lib/libadpcmdec.so|b3ec2cc197b682aa6ae7e1da9c8f25cc1aa75750
+vendor/lib/libgcs-calwrapper.so|7bbad068766b970e3fa576f372ed36b87e6d7898
+vendor/lib/libgcs-ipc.so|dd9c0e6e25b4b1c8a80cec843a7eec990111447f
+vendor/lib/libgcs-osal.so|413c0b9b767d8aa1da477f89b162d5b13604e0cf
+vendor/lib/libgcs.so|16dd5d2893062e717921674f92338d12a6a823fc
+vendor/lib/liblistensoundmodel2.so|f2bb8e4746b8a8bb86382e138092a7289b55a98f
+vendor/lib/libsmwrapper.so|0fbf611c9a597f7c70bfd2363dfc7f465d1dafd5
+vendor/lib64/libgcs-calwrapper.so|a5ffefbb0bd9ffddcc25859e18b7a444cd4d7cba
+vendor/lib64/libgcs-ipc.so|cf81a1d80a3faf4c1dd201477d8d80ec92a56dba
+vendor/lib64/libgcs-osal.so|6563b261374b1cf54ce1eaf4eda4b98ea2a0ecd7
+vendor/lib64/libgcs.so|7cf96f4e509fe7f88cc73a124ad9a74017438b08
+vendor/lib64/liblistensoundmodel2.so|033ddcaea28827fc3342f68d257570d9e2a3bd67
 
 # Media
 system/lib/libFileMux.so
@@ -604,22 +610,69 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal
-vendor/bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+vendor/bin/thermal-engine|6ee391c0b9f8d4ceea57521f584b75c60d2ffa09
+vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
+vendor/etc/thermal-engine.conf|17c7b4c95f6f7940636ca3bd6082a270c8656321
+vendor/lib/libthermalclient.so|b2d69a3a3589eb0387c2f13cc10ff91072c27c9a
+vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
+vendor/lib64/libthermalfeature.so|a1d99d33946d99ca620c6f5a8f4759d600a89086
 
 # TUI
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
+# Time - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+-vendor/app/TimeService/TimeService.apk|aacffbb597e40db705171966174f7242a5a5b4b4
+vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
+vendor/lib/libtime_genoff.so|9d0ed7481f38fa59b02e9d62a29cd1dd64ca06b6
+vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
 vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
 
-# Wi-Fi
-vendor/bin/cnss-daemon
+# WiFi - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+vendor/bin/cnss-daemon|1c63b8f94ba601b76edb0ee2fa1d1880de8d0ea3
+
+# WFD - from ddv_sprout-m690-user-11-RKQ1.210607.001-00WW_3_440-release-keys
+system/bin/wfdservice|57f6036617f625825c63ae4aa17f57ecad5f65b1
+system/etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
+system/etc/wfdconfig.xml|d07f6b0441c0aa8913865100239490fa8687a020
+system/etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
+-system/framework/WfdCommon.jar|0faa0fdf415b1ecdc92dfe6a52946a3248b7b02b
+system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|53170660f8bf41dbf209a2300f3e97007c90ef9c
+system/lib/libwfdavenhancements.so|23a67a68a0a5c90366e4ebceecb247808694a398
+system/lib/libwfdclient.so|3156122849b0eedab11db3366125923c48835cdb
+system/lib/libwfdcodecv4l2.so|2779df1f3a6a262856c9b4325c7b3d99d8130ca3
+system/lib/libwfdcommonutils.so|bc8f1e4f4e1cf592d2fce71cbadc60aea4d18264
+system/lib/libwfdconfigutils.so|35c72bc93727d648f6d760c1cd997cf517e082a5
+system/lib/libwfddisplayconfig.so|2c18b2508ae15f670080f3966790433759e638ff
+system/lib/libwfdmminterface.so|4ba7a39efb41946e7d393784295ea19a477f7f10
+system/lib/libwfdmmsink.so|18aeed9efcc6f1c1be23ac677b3a3ac94d227bbc
+system/lib/libwfdmmsrc.so|96629ae2518aaf7835f5db2911a0e6872d7c359f
+system/lib/libwfdnative.so|2dd16a8e1c571e2fd4d4c2b080f09068988f5ee0
+system/lib/libwfdrtsp.so|e18d364f064ee5f9427bbe992136642842f5bbfe
+system/lib/libwfdservice.so|bb4a036b6459e5d528d8869cd15b6cab39ea8116
+system/lib/libwfdsm.so|e5a25b03e76a326cc6e367019c9bec4f67b2cadc
+system/lib/libwfduibcinterface.so|047f1a9feff274982696b585085272e67298a840
+system/lib/libwfduibcsink.so|bd7b9e50916fb032516b25ba5aa4abc67b2deb1e
+system/lib/libwfduibcsinkinterface.so|0b96a16a5c11c67d80b915f03cd8b6908e9d1722
+system/lib/libwfduibcsrc.so|7f6ba23ecb0f111a9eb6ec8bcc55d14cadcebbb2
+system/lib/libwfduibcsrcinterface.so|7158e1c2f0ed12df2ec14699751ca50b30b40014
+system/lib64/libwfdclient.so|0a6a4bd7b4f4907e942531bfe733db04167180d0
+system/lib64/libwfdnative.so|a3bb8b395b60f21b2dfa274090d1ead4482a2272
+-system/priv-app/WfdService/WfdService.apk|77079899514d088bc7442864e1787660051b4a08
+vendor/bin/wifidisplayhalservice|d7b153a223f1866a753cef6bbc47315481115559
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|0b66c6a8e6edcf48f987985591da1931443cdb27
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|db24eddfbd5327dd4af5d867c64bdac19d5a16fe
+vendor/lib/libmiracast.so|f033cec8bc878d3c041f9452d2b80a03d0888383
+vendor/lib/libwfdcommonutils_proprietary.so|140667b18a50183d7a8ceb0272c4ca285d50fc65
+vendor/lib/libwfddisplayconfig_proprietary.so|17e075d8b5f9b284134625fd56850b151a9032dc
+vendor/lib/libwfdhaldsmanager.so|ccfa92889b4f7722cae8b9dd04fb9736bf2445b9
+vendor/lib/libwfdhdcpcp.so|7a29a27357adee82be927a7585b021c90d1c4df9
+vendor/lib/libwfdmmservice.so|5e3d0e031b9bb0164a7b82a4088881f23b0efe53
+vendor/lib/libwfdmodulehdcpsession.so|f5c5eb023a5adc65c9a5233906c30bba93dc4c28
+vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so|069ebd8cf7989342bd42a50c5b99123cf65482ee
+vendor/lib64/libmiracast.so|7f13b8bfdafd9d43e7869561bd966cbf5102d80a
+vendor/lib64/libwfdhdcpcp.so|a000d3871eff8a0832f81e01c186434b4e43cb93
+vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so|392279cda5b6201f57afe89b3f53f8eac3907ff1
